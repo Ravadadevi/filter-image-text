@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>filter-text</title>
+    <style>
+        .total{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .container{
+            width:200px ;
+            height: 200px;
+            position: relative;
+            margin: 40px;
+        }
+      
+        .grayscale{filter: grayscale(100%);}
+        .sepia{filter: sepia(100%);}
+        .blur{filter:blur(4px)}
+        .constract{filter: contrast(170%);}
+        .opacity{filter: opacity(50%);}
+         .saturate{filter: saturate(10);}
+         .invert{filter:invert(100%);}
+
+        .one{
+            
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            text-align: center;
+            font-size: 20px;
+            transition:1s ease ;
+            color: yellow;
+            opacity: 0;
+        }
+        .container:hover .one{
+            opacity:1;
+        }
+        .container:hover {
+
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="total">
+        <div class="container">
+            <img src="comiii.jpg" class="grayscale">
+            <p class=one>This is computer</p>
+        </div>
+        
+        <div class="container">
+            <img src="comiii.jpg" class="opacity">
+            <p class=one>This is computer</p>
+        </div>
+        <div class="container">
+            <img src="comiii.jpg" class="constract">
+            <p class=one>This is computer</p>
+        </div>
+        <div class="container">
+            <img src="comiii.jpg" class="sepia">
+            <p class=one>This is computer</p>
+            <div class="total">
+       
+    </div>
+</body>
+</html>
